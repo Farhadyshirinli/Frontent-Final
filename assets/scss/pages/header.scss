@@ -1,0 +1,91 @@
+$color: #fff;
+$orange--color: #ff931e;
+.first--page {
+  height: 100vh;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.mouse--icon {
+  padding: 34px;
+  span {
+    cursor: pointer;
+  }
+}
+
+.navigation--bar {
+  position: fixed;
+  background-color: transparent;
+  height: 100px;
+  width: 100%;
+  color: $color;
+  @include flexBox;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    a {
+      font-size: 17px;
+      line-height: 1.41;
+      color: #eee;
+      text-decoration: none;
+    }
+  }
+}
+
+.info--texts {
+  border: 5px black;
+  width: 1050px;
+  height: 300px;
+  padding: 220px;
+  line-height: 1.29;
+
+  // color: $color;
+
+  h1 {
+    font-size: 42px;
+    font-weight: 600;
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .mouse--icon {
+    margin-top: 150px;
+    font-size: 14px;
+
+    img {
+      vertical-align: middle;
+      transform: translateY(-7px);
+    }
+  }
+}
+
+.navBarOnScroll {
+  background-color: $color;
+  transition: 0.3s;
+  height: 65px;
+
+  ul {
+    a {
+      color: black;
+    }
+  }
+}
+
+.navigation--bar-tags {
+  ul {
+    a:hover {
+      transition: 0.3s;
+
+      color: $orange--color;
+    }
+  }
+}

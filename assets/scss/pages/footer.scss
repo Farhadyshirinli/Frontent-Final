@@ -1,0 +1,51 @@
+$white-color: #fff;
+$orange-color: #ff931e;
+
+.footer--page {
+  height: 100%;
+  padding: 50px 0 50px 0;
+
+  background-color: #000;
+}
+
+.footer--page-header {
+  display: flex;
+  gap: 140px;
+  h2 {
+    @include h2;
+    color: $white-color;
+  }
+
+  ul {
+    display: flex;
+    gap: 50px;
+    li {
+      text-transform: uppercase;
+      display: inline-block;
+      font-size: 21px;
+      color: $orange-color;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  }
+  a:visited {
+    color: $white-color;
+  }
+}
+
+.footer--info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 500px;
+  span {
+    color: #ffffff80;
+    font-size: 18px;
+    padding-top: 50px;
+  }
+  p {
+    padding-top: 10px;
+    font-size: 20px;
+
+    color: $white-color;
+  }
+}

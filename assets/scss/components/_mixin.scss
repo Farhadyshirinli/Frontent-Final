@@ -1,0 +1,111 @@
+@mixin flexBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin listTypeNone {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+@mixin WhatWeDoBoxes {
+  border-radius: 2%;
+  box-shadow: $boxShadow;
+  width: 335px;
+  height: 470px;
+  cursor: pointer;
+
+  img {
+    padding-top: 50px;
+  }
+  div {
+    @include flexBox;
+    flex-direction: column;
+    gap: 30px;
+  }
+  h3 {
+    font-size: 21px;
+    font-weight: bold;
+    color: #222;
+  }
+  p {
+    padding: 0 20px 0 20px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.62;
+    color: $lineColors;
+  }
+}
+
+@mixin fifthPageEndUserInfo {
+  .fifth--page-enduser-info-h3 {
+    display: flex;
+    flex-direction: row;
+    // gap: 20px;
+    color: $orange--color;
+    h3 {
+      font-size: 48px;
+      float: left;
+    }
+  }
+  p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.86;
+    text-transform: uppercase;
+    color: $black--color;
+  }
+}
+
+@mixin sixth--page-boxes {
+  border: 1px solid #d5dde4;
+  width: 270px;
+  height: 160px;
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: $boxShadow;
+}
+
+@mixin h2 {
+  padding-left: 220px;
+  font-size: 32px;
+  font-weight: bold;
+  color: $h--Color;
+}
+
+@mixin profileBoxes {
+  // flex-basis: 30%;
+
+  border: #222;
+  width: 200px;
+  height: 350px;
+  text-align: center;
+  line-height: 1.8;
+  h3 {
+    font-size: 18px;
+  }
+  p {
+    font-size: 15px;
+    color: $lineColors;
+  }
+}
+
+@mixin nineth--page-articles {
+  border: 2px black;
+  height: 250px;
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+
+  img {
+    width: auto;
+    height: 120px;
+  }
+  h3,
+  p {
+    font-size: 18px;
+    line-height: 2;
+  }
+}
